@@ -51,11 +51,15 @@ REM Clean previous build
 if exist "build" (
     echo Cleaning previous build...
     rmdir /s /q build
-)
-if exist "dist" (
+    if exist "dist" (
+        rmdir /s /q dist
+    )
+    echo [32m√[0m Previous build cleaned
+) else if exist "dist" (
+    echo Cleaning previous build...
     rmdir /s /q dist
+    echo [32m√[0m Previous build cleaned
 )
-if exist "build" echo [32m√[0m Previous build cleaned
 echo.
 
 REM Build with PyInstaller

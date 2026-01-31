@@ -5,11 +5,12 @@ This dashboard demonstrates how to create a Streamlit application that can be
 packaged as a standalone executable with bundled data for offline use.
 """
 
+import sys
+import os
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import os
-from pathlib import Path
 
 
 # Get the directory where the script is located
@@ -198,5 +199,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import sys
     main()
