@@ -1,0 +1,24 @@
+[server]
+# Server configuration for standalone distribution
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+# Browser configuration
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[theme]
+# Optional: Customize the theme
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
+
+[client]
+# Client configuration
+showErrorDetails = true
+toolbarMode = "minimal"

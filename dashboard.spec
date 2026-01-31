@@ -32,6 +32,8 @@ a = Analysis(
     datas=[
         # Bundle the sample data
         ('sample_data.csv', '.'),
+        # Bundle Streamlit configuration
+        ('.streamlit/config.toml', '.streamlit'),
         # Bundle Streamlit static files
         *streamlit_datas,
         # Bundle Plotly data
